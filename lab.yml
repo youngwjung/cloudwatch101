@@ -245,7 +245,7 @@ Resources:
       IamInstanceProfile: !Ref InstanceProfile
       DisableApiTermination: false
       InstanceInitiatedShutdownBehavior: stop
-      Monitoring: true
+      Monitoring: false
       SecurityGroupIds:
         - !Ref InstanceSecurityGroup
       Tags:
