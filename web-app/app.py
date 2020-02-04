@@ -4,6 +4,9 @@ import boto3
 import datetime
 import json
 import time
+import logging
+
+logging.basicConfig(filename='app.log', format='%(levelname)s - %(message)s')
 
 app = Flask(__name__)
 
@@ -32,7 +35,7 @@ def index():
         Dimensions=[
             {
                 'Name' : 'DBInstanceIdentifier',
-                'Value' : 'load-test'
+                'Value' : 'cw-postgres'
             }
         ],
         StartTime=datetime.datetime.utcnow() - datetime.timedelta(minutes=5),
@@ -73,4 +76,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
