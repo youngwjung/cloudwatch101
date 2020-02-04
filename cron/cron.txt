@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+
+*/5 * * * * /home/ec2-user/cron/cpu.sh
+*/9 * * * * /home/ec2-user/cron/mem.sh
+*/13 * * * * /home/ec2-user/cron/disk.sh
+*/17 * * * * /home/ec2-user/cron/rds.sh
