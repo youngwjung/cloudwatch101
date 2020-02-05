@@ -1,5 +1,19 @@
 # CloudWatch
 
+## Lab Overview
+
+1. Route53 Health Check 생성
+
+2. Application 로그를 CloudWatch Logs로 전송
+
+3. AWS에서 기본적으로 제공하는 서비스별 Metric 리뷰
+
+4. Custom Metric 생성
+
+5. CloudWatch Alarm 생성
+
+6. CloudWatch Dashboard 생성
+
 ## 시작하기전에
 
 1. 본 Hands-on lab은 AWS Seoul region 기준으로 작성되었습니다. Region을 Seoul (ap-northeast-2)로 변경 후 진행 부탁드립니다.
