@@ -246,6 +246,7 @@
                 "InstanceId":"${aws:InstanceId}",
                 "InstanceType":"${aws:InstanceType}"
             },
+            "aggregation_dimensions" : [["AutoScalingGroupName"]],
             "metrics_collected":{
                 "disk":{
                     "measurement":[
